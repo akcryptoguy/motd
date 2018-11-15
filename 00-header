@@ -39,7 +39,7 @@ printf "      ${color14},\`\\ ${color7}\\    ${color1}\`-\`${color7}.    ${color
 printf "     ${color14}/   \\ ${color7}'\`\`-.   \`   ${color14}System OS: `lsb_release -s -d`${nocolor}\n"
 printf "   ${color7}.-.  ${color14},       ${color7}\`___:  ${color14}`uname -srmo`${nocolor}\n"
 printf "  ${color7}(   ) ${color14}:       ${color1} ___   ${color14}Hostname: $(hostname) \n"
-printf "   ${color7}\`-\`  ${color14}\`      ${color1} ,   :${color3}  Weather (${weathercity}): `curl -s "${weatherurl}" | sed
+printf "   ${color7}\`-\`  ${color14}\`      ${color1} ,   :${color3}  Weather (${weathercity}): `curl -s ${weatherurl} | sed
 -n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`\n"
 printf "     ${color7}\\   / ${color1},..-\`   ,${color10}   Internal IP: `/sbin/ifconfig ${networkad} | /bin/grep "inet addr" | /usr/bin/cut -d ":" -f 2 | /usr/bin/cut -d " " -f 1`\n"
 printf "      ${color7}\`./${color1} /    ${color14}.-.${color1}\`${color10}    External IP: `/usr/bin/wget -q -O - http://icanhazip.com/ | /usr/bin/tail`\n"
