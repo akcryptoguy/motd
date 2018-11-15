@@ -1,13 +1,13 @@
 #!/bin/sh
-## Black        0;30     Dark Gray     1;30
-## Red          0;31     Light Red     1;31
-## Green        0;32     Light Green   1;32
-## Brown/Orange 0;33     Yellow        1;33
-## Blue         0;34     Light Blue    1;34
-## Purple       0;35     Light Purple  1;35
-## Cyan         0;36     Light Cyan    1;36
-## Light Gray   0;37     White         1;37
+### personalize these variables ###
+greeting='AKcryptoGUY'
+companyname='Deep Web Investments, LLC'
+divisionname='Cryptographic Asset Division'
+weathercity='Anchorage'
+weatherurl='http://rss.accuweather.com/rss/liveweather_rss.asp?locCode=Anchorage'
+networkad='eth0'
 
+### colors ###
 color1='\033[1;31m'  # light red
 color2='\033[0;31m'  # red
 color3='\033[1;32m'  # light green
@@ -26,13 +26,8 @@ color15='\033[0;30m'  # black
 color16='\033[1;30m'  # dark gray
 nocolor='\033[0m'    # no color
 
-companyname='Deep Web Investments, LLC'
-divisionname='Cryptographic Asset Division'
-weathercity='Anchorage'
-weatherurl='http://rss.accuweather.com/rss/liveweather_rss.asp?locCode=Anchorage'
-networkad='eth0'
-
-figlet AKcryptoGUY
+### banner ###
+figlet ${greeting}
 printf "               ${color1}.-.${nocolor}\n"
 printf "         ${color7}.-'\`\`${color1}(   )    ${color1}${companyname} ${nocolor}\n"
 printf "      ${color14},\`\\ ${color7}\\    ${color1}\`-\`${color7}.    ${color1}${divisionname}${nocolor}\n"
