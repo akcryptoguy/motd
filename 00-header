@@ -34,8 +34,8 @@ networkad='eth0'
 
 figlet AKcryptoGUY
 printf "               ${color1}.-.${nocolor}\n"
-printf "         ${color7}.-'\`\`${color1}(   )    ${color2}--> ${companyname} <-- ${nocolor}\n"
-printf "      ${color14},\`\\ ${color7}\\    ${color1}\`-\`${color7}.    ${color3}${divisionname}${nocolor}\n"
+printf "         ${color7}.-'\`\`${color1}(   )    ${color1}${companyname} ${nocolor}\n"
+printf "      ${color14},\`\\ ${color7}\\    ${color1}\`-\`${color7}.    ${color1}${divisionname}${nocolor}\n"
 printf "     ${color14}/   \\ ${color7}'\`\`-.   \`   ${color14}System OS: `lsb_release -s -d`${nocolor}\n"
 printf "   ${color7}.-.  ${color14},       ${color7}\`___:  ${color14}`uname -srmo`${nocolor}\n"
 printf "  ${color7}(   ) ${color14}:       ${color1} ___   ${color14}Hostname: $(hostname) \n"
