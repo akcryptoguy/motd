@@ -1,11 +1,15 @@
 #!/bin/sh
+### notes on personalization ###
+### in weatherurl, change metric to 1 to use Celcius or 2 if for Fahrenheit
+### do not exceed 12 characters for greeting
+
 ### personalize these variables ###
 greeting='AKcryptoGUY'
 companyname='Deep Web Investments, LLC'
 divisionname='Cryptographic Asset Division'
 weathercity='Anchorage'
-weatherurl='http://rss.accuweather.com/rss/liveweather_rss.asp?locCode=Anchorage'
-networkad='eth0'
+weatherurl='http://rss.accuweather.com/rss/liveweather_rss.asp?metric=2&locCode=Anchorage'
+networkad='ens3'
 
 ### colors ###
 color1='\033[1;31m'  # light red
