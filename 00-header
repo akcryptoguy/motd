@@ -11,7 +11,7 @@
 color1='\033[1;31m'  # light red
 color2='\033[0;31m'  # red
 color3='\033[1;32m'  # light green
-color4='\033[0;33m'  # green
+color4='\033[0;32m'  # green
 color5='\033[1;34m'  # light blue
 color6='\033[0;34m'  # blue
 color7='\033[1;35m'  # light purple
@@ -26,21 +26,22 @@ color15='\033[0;30m'  # black
 color16='\033[1;30m'  # dark gray
 nocolor='\033[0m'    # no color
 
-companyname='\033[1;34mDark Web Investments, LLC\033[0m'
-divisionname='\033[1;32mCryptographic Asset Division\033[0m'
+companyname='Dark Web Investments, LLC'
+divisionname='Cryptographic Asset Division'
 weathercity='Anchorage'
 networkad='eth0'
 
 figlet AKcryptoGUY
 printf "               ${color1}.-.${nocolor}\n"
-printf "         ${color7}.-'\`\`${color1}(   )    ${companyname}${nocolor}\n"
-printf "      ${color14},\`\\ ${color7}\\    ${color1}\`-\`${color7}.    ${divisionname}${nocolor}\n"
-printf "     ${color14}/   \\ ${color7}'\`\`-.   \`   ${color14}`lsb_release -s -d`${nocolor}\n"
-printf "   ${color7}.-.  ${color14},       ${color7}\`___:  ${nocolor}`uname -srmo`${nocolor}\n"
-printf "  ${color7}(   ) ${color14}:       ${color1} ___   ${nocolor}`date +"%A, %e %B %Y, %r"`${nocolor}\n"
-printf "   ${color7}\`-\`  ${color14}\`      ${color1} ,   :${nocolor}  Weather (${weathercity}): `curl -s "http://rss.accuweather.com/rss/liveweather_rss.asp?locCode=${weathercity}" | sed -n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`\n"
-printf "     ${color7}\\   / ${color1},..-\`   ,${nocolor}   Internal IP: `/sbin/ifconfig ${networkad} | /bin/grep "inet addr" | /usr/bin/cut -d ":" -f 2 | /usr/bin/cut -d " " -f 1`\n"
-printf "      ${color7}\`./${color1} /    ${color14}.-.${color1}\`${nocolor}    External IP: `/usr/bin/wget -q -O - http://icanhazip.com/ | /usr/bin/tail`\n"
+printf "         ${color7}.-'\`\`${color1}(   )    ${color5}${companyname}${nocolor}\n"
+printf "      ${color14},\`\\ ${color7}\\    ${color1}\`-\`${color7}.    ${color3}${divisionname}${nocolor}\n"
+printf "     ${color14}/   \\ ${color7}'\`\`-.   \`   ${color14}System OS: `lsb_release -s -d`${nocolor}\n"
+printf "   ${color7}.-.  ${color14},       ${color7}\`___:  ${color14}`uname -srmo`${nocolor}\n"
+printf "  ${color7}(   ) ${color14}:       ${color1} ___   ${color14}Hostname: $(hostname) \n"
+printf "   ${color7}\`-\`  ${color14}\`      ${color1} ,   :${color13}  Weather (${weathercity}): `curl -s "http://rss.accuweather.com/rss/liveweather_rss.asp?locCode=${weathercity}" | sed
+-n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`\n"
+printf "     ${color7}\\   / ${color1},..-\`   ,${color10}   Internal IP: `/sbin/ifconfig ${networkad} | /bin/grep "inet addr" | /usr/bin/cut -d ":" -f 2 | /usr/bin/cut -d " " -f 1`\n"
+printf "      ${color7}\`./${color1} /    ${color14}.-.${color1}\`${color10}    External IP: `/usr/bin/wget -q -O - http://icanhazip.com/ | /usr/bin/tail`\n"
 printf "         ${color1}\`-..-${color14}(   )${color1}    ** Uptime: `/usr/bin/uptime -p` **${nocolor}\n"
-printf "               ${color14}\`-\`${nocolor}              Hostname: $(hostname) \n"
-printf "               ${color1}   ${nocolor}\n"
+printf "               ${color14}\`-\`${nocolor}     ${nocolor}\n"
+# printf "               ${color1}   ${nocolor}\n"
