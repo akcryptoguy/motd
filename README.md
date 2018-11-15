@@ -20,7 +20,7 @@ Changes will take effect immediately, so there is no need to reboot the VPS. Exa
 
 Use at your own risk :)
 
-To update your location for weather, update "weathercity" and "weatherurl" with your nearest major city supported by AccuWeather.
+To update your location for weather, update "weathercity" and "weatherurl" with your nearest major city supported by AccuWeather. You can also personalize other variables.
 
 ```
 sudo nano /etc/update-motd.d/00-header
