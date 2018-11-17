@@ -8,4 +8,5 @@ chmod +x /etc/update-motd.d/*
 cat 00-header > /etc/update-motd.d/00-header
 cat 10-sysinfo > /etc/update-motd.d/10-sysinfo
 cat 90-footer > /etc/update-motd.d/90-footer
+cat issue.net > /etc/issue.net
 systemctl restart sshd
